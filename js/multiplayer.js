@@ -20,7 +20,7 @@ class MultiplayerManager {
         const isProduction = window.location.hostname !== 'localhost';
         if (isProduction) {
             // Vercel部署环境
-            return `wss://${window.location.host}/ws`;
+            return `wss://sci-fi-tower-defense.vercel.app/ws`;
         } else {
             // 本地开发环境
             return 'ws://localhost:8001/ws';
