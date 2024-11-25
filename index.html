@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科幻塔防</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/multiplayer.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-overlay">
+            <div id="resources">
+                <span>资源: <span id="credits">500</span></span>
+                <span>波次: <span id="wave">1</span></span>
+            </div>
+            <div id="tower-selection">
+                <!-- 防御塔按钮将动态添加 -->
+            </div>
+            <div id="tower-info" class="hidden">
+                <h3>防御塔信息</h3>
+                <p>伤害: <span id="tower-damage">0</span></p>
+                <p>射程: <span id="tower-range">0</span></p>
+                <p>等级: <span id="tower-level">1</span></p>
+                <button id="upgrade-btn">升级 (100)</button>
+                <button id="sell-btn">出售</button>
+            </div>
+        </div>
+        <div id="multiplayer-menu" class="hidden">
+            <h2>多人游戏设置</h2>
+            <input type="text" id="player-name" placeholder="输入你的名字">
+            <input type="text" id="room-id" placeholder="输入房间ID（加入游戏用）">
+            <button id="create-game">创建游戏</button>
+            <button id="join-game">加入游戏</button>
+            <button id="ready-game" class="hidden">准备</button>
+            <div id="player-list"></div>
+            <div id="room-info" class="hidden">
+                <h3>房间ID: <span id="current-room-id"></span></h3>
+            </div>
+        </div>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/tower.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/multiplayer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "sci-fi-tower-defense",
+  "version": "1.0.0",
+  "description": "A multiplayer sci-fi tower defense game",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-server": "^14.1.1",
+    "ws": "^8.13.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
